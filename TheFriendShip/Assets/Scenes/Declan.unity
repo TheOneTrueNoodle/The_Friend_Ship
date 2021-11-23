@@ -707,7 +707,7 @@ MonoBehaviour:
   cursorChildObject: {fileID: 1403255246}
   objectToPlace: {fileID: 6331935190901107290, guid: 3610f1296a68a2045aace472a6b78c35, type: 3}
   raycastManager: {fileID: 1953127479}
-  useCursor: 0
+  useCursor: 1
 --- !u!4 &936864798
 Transform:
   m_ObjectHideFlags: 0
