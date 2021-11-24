@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
 
 public class ARCursor : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class ARCursor : MonoBehaviour
     public ARRaycastManager raycastManager;
 
     public bool useCursor = true;
+
+    public Text DuckText;
+
   
     void Start()
     {
@@ -24,6 +28,7 @@ public class ARCursor : MonoBehaviour
         {
             UpdateCursor();
         }
+        
 
         if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
@@ -37,10 +42,15 @@ public class ARCursor : MonoBehaviour
                 raycastManager.Raycast(Input.GetTouch(0).position, hits, UnityEngine.XR.ARSubsystems.TrackableType.Planes);
                 if(hits.Count > 0)
                 {
-                    GameObject.Instantiate(objectToPlace, hits[0].pose.position, hits[0].pose.rotation);
+
+                    GameObject duckie = GameObject.Instantiate(objectToPlace, hits[0].pose.position, hits[0].pose.rotation);
+                    duckie.transform.rotation = Quaternion.Euler(-90, 0, 0);
+
                 }
             }
         }
+
+
     }
 
     void UpdateCursor()
