@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jamoh\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jamoh\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TheFriendShip.690272676.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jamoh\OneDrive\Documents\GitHub\The_Friend_Ship\TheFriendShip" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Samples" t="Include">
+          <e p="XR Plugin Management" t="Include">
+            <e p="4.0.1" t="Include">
+              <e p="Example XR Management implementation" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="SampleBuildProcessor.cs" t="Include" />
+                  <e p="SampleMetadata.cs" t="Include" />
+                  <e p="SampleSettingsEditor.cs" t="Include" />
+                  <e p="SampleStandaloneLoaderUI.cs" t="Include" />
+                  <e p="Unity.XR.Management.Samples.Editor.asmdef" t="Include" />
+                </e>
+                <e p="SampleConstants.cs" t="Include" />
+                <e p="SampleLoader.cs" t="Include" />
+                <e p="SampleSettings.cs" t="Include" />
+                <e p="Unity.XR.Management.Samples.asmdef" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AR_placement_with_block_UI.cs" t="Include" />
+          <e p="ARCursor.cs" t="Include" />
+          <e p="AudioManager.cs" t="Include" />
+          <e p="Extensions" t="Include">
+            <e p="Vector2Extensions.cs" t="Include" />
+          </e>
+          <e p="ObjectSelect.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="TheFriendShip.sln" t="IncludeFlat" />
+      <e p="Unity.XR.Management.Samples.csproj" t="IncludeRecursive" />
+      <e p="Unity.XR.Management.Samples.Editor.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
