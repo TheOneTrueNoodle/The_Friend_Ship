@@ -47,7 +47,9 @@ public class AR_placement_with_block_UI : MonoBehaviour
 
                 if(!isOverUi && arRaycastManager.Raycast(touchPosition, hits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinPolygon))
                 {
+                    
                     var hitPose = hits[0].pose;
+                    hitPose.rotation.Set(0, 180f, 0, 0);
                     Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
                 }
             }
