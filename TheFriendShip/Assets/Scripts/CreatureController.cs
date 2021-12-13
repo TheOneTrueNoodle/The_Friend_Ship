@@ -4,33 +4,57 @@ using UnityEngine;
 
 public class CreatureController : MonoBehaviour
 {
-    private CreatureDetails Details;
+    public Creatures Creature;
     private GameObject[] Dislikes;
-    private Transform Transform;
+    private GameObject[] Likes;
+
+    public Rigidbody RB;
+
+    public float range;
+    public float speed;
 
     private void Awake()
     {
-        Details.Creature.DislikedCreatures = Dislikes;
+        Creature.DislikedCreatures = Dislikes;
+        Creature.LikedCreatures = Likes;
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
         for (int i = 0; i < Dislikes.Length; i++)
         {
-            /*
-            float mobInQuestion = closestMob.transform.position;
-            float thisOne = this.transform.position;
- 
-            float distCheck = Mathf.Min(mobInQuestion, thisOne);
-            */
-            Debug.Log("Magnitude: " + Vector3.Distance(Dislikes.transform.position, Transform.position)); ;
+            if(other == Dislikes[i])
+            {
+                RunFromTargetWithRotation(Likes[i].transform, 0.5f);
+                return;
+            }
+        }
 
-            //The above and below currently feed out the same information.
-
-            float distCheck = Vector3.Distance(Dislikes.transform.position, Transform.position);
-            Debug.Log("Distance Check: " + (Mathf.Min(distCheck)));
+        for (int i = 0; i < Likes.Length; i++)
+        {
+            if(other == Likes[i])
+            {
+                FollowTargetWithRotation(Likes[i].transform, 0.5f);
+                return;
+            }
         }
     }
 
-    private void Update()
+    public void FollowTargetWithRotation(Transform target, float distanceToStop)
     {
-        
+        if (Vector3.Distance(transform.position, target.position) > distanceToStop)
+        {
+            transform.LookAt(target);
+            RB.AddRelativeForce(Vector3.forward * speed, ForceMode.Force);
+        }
+    }
+
+    public void RunFromTargetWithRotation(Transform target, float distanceToStop)
+    {
+        if (Vector3.Distance(transform.position, target.position) > distanceToStop)
+        {
+            transform.LookAt(target);
+            RB.AddRelativeForce(Vector3.back * speed, ForceMode.Force);
+        }
     }
 }
