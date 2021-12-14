@@ -43,4 +43,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b1cbcb0e03639488aa6450f1f0f0bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Ice
+    clip: {fileID: 8300000, guid: 14424762ef09de04a8678d26d061a10a, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Fire
+    clip: {fileID: 8300000, guid: 9e9670f5fd8940c42b70b7a30f93e5c2, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Earth
+    clip: {fileID: 8300000, guid: 1e286c82655c28e49a9c7b1b3fe93419, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Water
+    clip: {fileID: 8300000, guid: 2f9db70861310b44baadeed06e769cd4, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Electric
+    clip: {fileID: 8300000, guid: 92a34d9f3d3bf6649985c26b455d4b5c, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Crystal
+    clip: {fileID: 8300000, guid: b5c6333ca0821e7418ecf5a7df16faf9, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Metal
+    clip: {fileID: 8300000, guid: 7d837a6ea9e71804cb68536b3a883d8a, type: 3}
+    volume: 0.5
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
