@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7117418366461154706
+--- !u!1 &7155413057940168206
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 502929806396892500}
-  - component: {fileID: 6528458345400847874}
+  - component: {fileID: 536429690014609096}
+  - component: {fileID: 6562512451906586014}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &502929806396892500
+--- !u!4 &536429690014609096
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7117418366461154706}
+  m_GameObject: {fileID: 7155413057940168206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6528458345400847874
+--- !u!114 &6562512451906586014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7117418366461154706}
+  m_GameObject: {fileID: 7155413057940168206}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31b1cbcb0e03639488aa6450f1f0f0bd, type: 3}
@@ -46,43 +46,61 @@ MonoBehaviour:
   sounds:
   - name: Ice
     clip: {fileID: 8300000, guid: 14424762ef09de04a8678d26d061a10a, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Fire
     clip: {fileID: 8300000, guid: 9e9670f5fd8940c42b70b7a30f93e5c2, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Earth
     clip: {fileID: 8300000, guid: 1e286c82655c28e49a9c7b1b3fe93419, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Water
     clip: {fileID: 8300000, guid: 2f9db70861310b44baadeed06e769cd4, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Electric
     clip: {fileID: 8300000, guid: 92a34d9f3d3bf6649985c26b455d4b5c, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Crystal
     clip: {fileID: 8300000, guid: b5c6333ca0821e7418ecf5a7df16faf9, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: Metal
     clip: {fileID: 8300000, guid: 7d837a6ea9e71804cb68536b3a883d8a, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1.5
     loop: 0
+    source: {fileID: 0}
+  - name: GamePlayTheme
+    clip: {fileID: 8300000, guid: 1767a47966b8a84489dfb415e51ff99c, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 1
+    source: {fileID: 0}
+  - name: StartMenuTheme
+    clip: {fileID: 8300000, guid: 1495910c925d7164c956e393ec144569, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 1
+    source: {fileID: 0}
+  - name: StartMenuSounds
+    clip: {fileID: 8300000, guid: 8aa0b18d6c892b64c8df2487c314d781, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 1
     source: {fileID: 0}

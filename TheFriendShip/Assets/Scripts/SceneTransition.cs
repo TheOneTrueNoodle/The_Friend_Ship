@@ -6,22 +6,16 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
 
-    void sceneTransition()
-    {
-    
-            SceneManager.LoadScene("Declan");
-
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    public void Transition()
     {
         SceneManager.LoadScene("Declan");
+        FindObjectOfType<AudioManager>().Stop("StartMenuTheme");
+        FindObjectOfType<AudioManager>().Stop("StartMenuSounds");
+        FindObjectOfType<AudioManager>().Play("GamePlayTheme");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

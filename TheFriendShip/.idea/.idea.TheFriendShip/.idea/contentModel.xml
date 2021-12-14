@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Quit.cs" t="Include" />
         <e p="Samples" t="Include">
           <e p="XR Plugin Management" t="Include">
             <e p="4.0.7" t="Include">
@@ -38,6 +39,7 @@
             <e p="Vector2Extensions.cs" t="Include" />
           </e>
           <e p="ObjectSelect.cs" t="Include" />
+          <e p="SceneTransition.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
         </e>
