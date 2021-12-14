@@ -7,6 +7,12 @@ public class CreatureController : MonoBehaviour
     public Creatures Creature;
     private GameObject[] Dislikes;
     private GameObject[] Likes;
+    private GameObject[] Fusions;
+
+    [HideInInspector]
+    public bool IsFusable = false;
+
+    private GameObject CreatureManager;
 
     public Rigidbody RB;
 
@@ -17,15 +23,21 @@ public class CreatureController : MonoBehaviour
     {
         Creature.DislikedCreatures = Dislikes;
         Creature.LikedCreatures = Likes;
+        Creature.Fusions = Fusions;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
+    {
+        CreatureManager = GameObject.Find("Creature Manager");
+    }
+
+    private void OnTriggerStay(Collider other)
     {
         for (int i = 0; i < Dislikes.Length; i++)
         {
             if(other == Dislikes[i])
             {
-                RunFromTargetWithRotation(Likes[i].transform, 0.5f);
+                RunFromTargetWithRotation(Dislikes[i].transform, 6f);
                 return;
             }
         }
@@ -34,7 +46,7 @@ public class CreatureController : MonoBehaviour
         {
             if(other == Likes[i])
             {
-                FollowTargetWithRotation(Likes[i].transform, 0.5f);
+                FollowTargetWithRotation(Likes[i].transform, 0f);
                 return;
             }
         }
@@ -55,6 +67,29 @@ public class CreatureController : MonoBehaviour
         {
             transform.LookAt(target);
             RB.AddRelativeForce(Vector3.back * speed, ForceMode.Force);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        for (int i = 0; i < Fusions.Length; i++)
+        {
+            if (other.gameObject == Fusions[i])
+            {
+                this.tag = "Fusable";
+                CreatureManager.GetComponent<CreatureManager>().TriggerFusion();
+            }
+        }
+    }
+
+    private void OnCollisionStay(Collision other)
+    {
+        for (int i = 0; i < Fusions.Length; i++)
+        {
+            if (other.gameObject == Fusions[i])
+            {
+                IsFusable = true;
+            }
         }
     }
 }
