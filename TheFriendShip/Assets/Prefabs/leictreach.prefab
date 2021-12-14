@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688455918864381119}
+  - component: {fileID: 6553472287766837393}
+  - component: {fileID: 5911655472068581766}
   m_Layer: 0
   m_Name: leictreach
   m_TagString: Untagged
@@ -31,6 +33,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 176.005, z: 0}
+--- !u!135 &6553472287766837393
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199904056651378181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 1.05, z: 0}
+--- !u!114 &5911655472068581766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199904056651378181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cfada4109e1c94e9f724a435e7439d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Creature:
+    LikedCreatures: []
+    DislikedCreatures: []
+    Fusions: []
+  RB: {fileID: 2376610845255385069}
+  range: 0
+  speed: 0
 --- !u!1 &9172698081643075292
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +77,8 @@ GameObject:
   - component: {fileID: 2966456448839728301}
   - component: {fileID: 1733677281322276921}
   - component: {fileID: 3130636105987904025}
+  - component: {fileID: 2376610845255385069}
+  - component: {fileID: 3215484532765780322}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -127,3 +163,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 5230e79eaf631ad4d9897d71d46e2bc3, type: 3}
+--- !u!54 &2376610845255385069
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172698081643075292}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 96
+  m_CollisionDetection: 0
+--- !u!135 &3215484532765780322
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172698081643075292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.99999994
+  m_Center: {x: 0, y: 1.0999999, z: 0}
