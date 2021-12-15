@@ -5,9 +5,11 @@ using UnityEngine;
 [System.Serializable]
 public class Creatures
 {
-    public GameObject[] LikedCreatures;
 
-    public GameObject[] DislikedCreatures;
+    public int ID;
+    public int[] LikedCreatureIDs;
 
-    public GameObject[] Fusions;
+    public int[] DislikedCreatureIDs;
+
+    public int[] FusionIDs;
 }

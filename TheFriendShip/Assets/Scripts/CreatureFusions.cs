@@ -9,8 +9,9 @@ public class CreatureFusions
     [TextArea(1, 5)]
     public string FusionName;
 
-    public GameObject[] Inputs;
+    public int[] InputIDs;
+    public int OutputID;
     public GameObject Output;
 
-    public Event Event;
+    public int Length { get; internal set; }
 }

@@ -4,92 +4,99 @@ using UnityEngine;
 
 public class CreatureController : MonoBehaviour
 {
-    public Creatures Creature;
-    private GameObject[] Dislikes;
-    private GameObject[] Likes;
-    private GameObject[] Fusions;
+    public int ID;
 
-    [HideInInspector]
+    public int[] LikedIDs;
+    public int[] DislikedIDs;
+    public int[] FusionIDs;
+
     public bool IsFusable = false;
 
-    private GameObject CreatureManager;
+    private GameObject FusionsManager;
 
-    public Rigidbody RB;
+    private Rigidbody RB;
 
     public float range;
     public float speed;
 
-    private void Awake()
-    {
-        Creature.DislikedCreatures = Dislikes;
-        Creature.LikedCreatures = Likes;
-        Creature.Fusions = Fusions;
-    }
-
     private void Start()
     {
-        CreatureManager = GameObject.Find("Creature Manager");
+        RB = GetComponent<Rigidbody>();
+
+        FusionsManager = GameObject.Find("Fusions Manager");
     }
 
-    private void OnTriggerStay(Collider other)//semen
+    private void OnTriggerStay(Collider other)
     {
-        for (int i = 0; i < Dislikes.Length; i++)
+        if (other.gameObject.GetComponent<CreatureController>() == null)
         {
-            if(other.gameObject == Dislikes[i])
+            return;
+        }
+        else
+        {
+            foreach (int Dislike in DislikedIDs)
             {
-                RunFromTargetWithRotation(Dislikes[i].transform, 6f);
-                return;
+                if (other.gameObject.GetComponent<CreatureController>().ID != Dislike)
+                {
+                    continue;
+                }
+                RunFromTargetWithRotation(other.transform, 6f);
+            }
+
+            foreach (int Like in LikedIDs)
+            {
+                if (other.gameObject.GetComponent<CreatureController>().ID != Like)
+                {
+                    continue;
+                }
+                FollowTargetWithRotation(other.transform, 0f);
+                
             }
         }
+    }
 
-        for (int i = 0; i < Likes.Length; i++)
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.GetComponent<CreatureController>() == null)
         {
-            if(other.gameObject == Likes[i])
+            return;
+        }
+        else
+        {
+            if (Vector3.Distance(other.transform.position, transform.position) < range)
             {
-                FollowTargetWithRotation(Likes[i].transform, 0f);
-                return;
+                Debug.Log("Okay so this far is working!!!!");
+
+                foreach (int Fusion in FusionIDs)
+                {
+                    foreach (int OtherFusion in other.gameObject.GetComponent<CreatureController>().FusionIDs)
+                    {
+                        if (OtherFusion == Fusion)
+                        {
+                            List<GameObject> InputCreatures = new List<GameObject>();
+                            InputCreatures.Add(other.gameObject);
+                            InputCreatures.Add(gameObject);
+
+                            tag = "Fusable";
+                            other.gameObject.tag = "Fusable";
+                            IsFusable = true;
+                            FusionsManager.GetComponent<FusionsManager>().TriggerFusion(InputCreatures, Fusion, other.transform.position);
+                        }
+                    }
+                }
             }
         }
     }
 
     public void FollowTargetWithRotation(Transform target, float distanceToStop)
     {
-        if (Vector3.Distance(transform.position, target.position) > distanceToStop)
-        {
-            transform.LookAt(target);
-            RB.AddRelativeForce(Vector3.forward * speed, ForceMode.Force);
-        }
+        transform.LookAt(target);
+        RB.AddRelativeForce(Vector3.forward * speed, ForceMode.Force);
     }
 
     public void RunFromTargetWithRotation(Transform target, float distanceToStop)
     {
-        if (Vector3.Distance(transform.position, target.position) > distanceToStop)
-        {
-            transform.LookAt(target);
-            RB.AddRelativeForce(Vector3.back * speed, ForceMode.Force);
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        for (int i = 0; i < Fusions.Length; i++)
-        {
-            if (other.gameObject == Fusions[i])
-            {
-                this.tag = "Fusable";
-                CreatureManager.GetComponent<CreatureManager>().TriggerFusion();
-            }
-        }
-    }
-
-    private void OnCollisionStay(Collision other)
-    {
-        for (int i = 0; i < Fusions.Length; i++)
-        {
-            if (other.gameObject == Fusions[i])
-            {
-                IsFusable = true;
-            }
-        }
+        transform.LookAt(target);
+        RB.AddRelativeForce(Vector3.back * speed, ForceMode.Force);
     }
 }
