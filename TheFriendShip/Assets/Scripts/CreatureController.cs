@@ -31,11 +31,11 @@ public class CreatureController : MonoBehaviour
         CreatureManager = GameObject.Find("Creature Manager");
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other)//semen
     {
         for (int i = 0; i < Dislikes.Length; i++)
         {
-            if(other == Dislikes[i])
+            if(other.gameObject == Dislikes[i])
             {
                 RunFromTargetWithRotation(Dislikes[i].transform, 6f);
                 return;
@@ -44,7 +44,7 @@ public class CreatureController : MonoBehaviour
 
         for (int i = 0; i < Likes.Length; i++)
         {
-            if(other == Likes[i])
+            if(other.gameObject == Likes[i])
             {
                 FollowTargetWithRotation(Likes[i].transform, 0f);
                 return;

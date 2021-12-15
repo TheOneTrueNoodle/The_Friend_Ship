@@ -189,55 +189,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &255705515
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 255705516}
-  - component: {fileID: 255705517}
-  m_Layer: 0
-  m_Name: Creature Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &255705516
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255705515}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97160244, y: -13.903556, z: 23.428205}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &255705517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255705515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d69960009702b4480264602d6cb7d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CreatureFusions:
-  - FusionName: Fusion A
-    Inputs:
-    - {fileID: 0}
-    - {fileID: 0}
-    Output: {fileID: 0}
 --- !u!1 &337608753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,3 +2321,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3a2aa870c2e3847a3306698d813647, type: 3}
+--- !u!1001 &6275618254832551742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.97160244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.903556
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.428205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275618254786234005, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
+      propertyPath: m_Name
+      value: Creature Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}

@@ -186,9 +186,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Creature:
-    LikedCreatures: []
+    LikedCreatures:
+    - {fileID: 4082839317462421177, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
     DislikedCreatures: []
-    Fusions: []
+    Fusions:
+    - {fileID: 4082839317462421177, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
+  IsFusable: 0
   RB: {fileID: 1886318091947704832}
-  range: 0
-  speed: 0
+  range: 4
+  speed: 5
