@@ -37,7 +37,6 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Play("StartMenuTheme");
-        Play("StartMenuSounds");
     }
 
     public void Play(string name)

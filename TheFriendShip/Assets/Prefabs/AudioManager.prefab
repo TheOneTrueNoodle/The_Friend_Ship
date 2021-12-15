@@ -98,9 +98,3 @@ MonoBehaviour:
     pitch: 1.5
     loop: 1
     source: {fileID: 0}
-  - name: StartMenuSounds
-    clip: {fileID: 8300000, guid: 8aa0b18d6c892b64c8df2487c314d781, type: 3}
-    volume: 1
-    pitch: 1.5
-    loop: 1
-    source: {fileID: 0}

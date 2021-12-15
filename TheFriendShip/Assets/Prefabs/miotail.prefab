@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4202739652944115112}
   - component: {fileID: 8588300566959094838}
   - component: {fileID: 6780342652237939499}
-  - component: {fileID: 7686775766353594297}
   m_Layer: 0
   m_Name: miotail
   m_TagString: Untagged
@@ -59,33 +58,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cfada4109e1c94e9f724a435e7439d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Creature:
-    LikedCreatures: []
-    DislikedCreatures: []
-    Fusions: []
+  ID: 0
+  LikedIDs: 
+  DislikedIDs: 
+  FusionIDs: 
   IsFusable: 0
-  RB: {fileID: 7358480030871198641}
   range: 0
   speed: 0
---- !u!95 &7686775766353594297
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537843443547959058}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2f930626bf19a145b3111da6b2ee2c6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5518380957758756811
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +79,7 @@ GameObject:
   - component: {fileID: 1777939454945153806}
   - component: {fileID: 1159158417419862044}
   - component: {fileID: 7358480030871198641}
+  - component: {fileID: 3142890252621067773}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -213,3 +193,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 96
   m_CollisionDetection: 0
+--- !u!95 &3142890252621067773
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518380957758756811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d80c5cc70ce20ea4fb091a06fdb36dfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

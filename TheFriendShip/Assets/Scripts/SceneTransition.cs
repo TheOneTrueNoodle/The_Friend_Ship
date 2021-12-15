@@ -12,7 +12,6 @@ public class SceneTransition : MonoBehaviour
     {
         SceneManager.LoadScene("Declan");
         FindObjectOfType<AudioManager>().Stop("StartMenuTheme");
-        FindObjectOfType<AudioManager>().Stop("StartMenuSounds");
         FindObjectOfType<AudioManager>().Play("GamePlayTheme");
     }
 
