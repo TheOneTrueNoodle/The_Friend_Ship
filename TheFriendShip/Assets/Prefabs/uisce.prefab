@@ -189,6 +189,7 @@ MonoBehaviour:
     LikedCreatures: []
     DislikedCreatures: []
     Fusions: []
+  IsFusable: 0
   RB: {fileID: 8542363092718987896}
   range: 0
   speed: 0
