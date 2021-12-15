@@ -11,9 +11,23 @@ public class ObjectSelect : MonoBehaviour
     [SerializeField] private GameObject RedPrefab;
     [SerializeField] private GameObject YellowPrefab;
     [SerializeField] private GameObject BluePrefab;
+    [SerializeField] private GameObject OrangePrefab;
+    [SerializeField] private GameObject GreyPrefab;
+    [SerializeField] private GameObject GreenPrefab;
+    [SerializeField] private GameObject WhitePrefab;
+
+
+
     [SerializeField] private GameObject RedButton;
     [SerializeField] private GameObject YellowButton;
     [SerializeField] private GameObject BlueButton;
+    [SerializeField] private GameObject OrangeButton;
+    [SerializeField] private GameObject GreyButton;
+    [SerializeField] private GameObject GreenButton;
+    [SerializeField] private GameObject WhiteButton;
+
+
+
     private AR_placement_with_block_UI ARPlacement;
 
     private void Awake()
@@ -34,4 +48,27 @@ public class ObjectSelect : MonoBehaviour
         ARPlacement.placedPrefab = BluePrefab;
     }
   
+    public void OrangeButtonToggle()
+    {
+        ARPlacement.placedPrefab = OrangePrefab;
+
+    }
+
+    public void GreyButtonToggle()
+    {
+        ARPlacement.placedPrefab = GreyPrefab;
+
+    }
+
+    public void GreenButtonToggle()
+    {
+        ARPlacement.placedPrefab = GreenPrefab;
+    }
+
+    public void WhiteButtonToggle()
+    {
+        ARPlacement.placedPrefab = WhitePrefab;
+
+    }
+
 }
