@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8445366641864101665}
   - component: {fileID: 8542363092718987896}
   - component: {fileID: 4160984894850049435}
+  - component: {fileID: 7836862210599280725}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2380786318233537508}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -127,6 +128,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.1
   m_Center: {x: 7.105429e-16, y: 0.8, z: -0.100000024}
+--- !u!95 &7836862210599280725
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380786318233537508}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 840138c824c79f4468bb2ef8c9ef18f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6667451063572427581
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +209,7 @@ MonoBehaviour:
     LikedCreatures: []
     DislikedCreatures: []
     Fusions: []
+  IsFusable: 0
   RB: {fileID: 8542363092718987896}
   range: 0
   speed: 0
