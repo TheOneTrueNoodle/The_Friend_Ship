@@ -1362,14 +1362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -675700988062786080, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
-      propertyPath: range
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: -675700988062786080, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6208028462271027537, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
       propertyPath: m_Name
       value: oighir
@@ -1418,27 +1410,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5650285328480616458, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
---- !u!1 &799258346 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6208028462271027537, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
-  m_PrefabInstance: {fileID: 686916632}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &799258351
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799258346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.05
-  m_Center: {x: 0, y: 1.05, z: 0}
 --- !u!1 &966613432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,9 +2106,17 @@ MonoBehaviour:
   RedPrefab: {fileID: 225769123755363740, guid: 5fb675774361c2b489ff19b159cbfbce, type: 3}
   YellowPrefab: {fileID: 2207113491441080029, guid: ff00ec1d25af2f344991293ce78ceb94, type: 3}
   BluePrefab: {fileID: 7033194134012896220, guid: a73605cccae03b64d90119948785488a, type: 3}
+  OrangePrefab: {fileID: 0}
+  GreyPrefab: {fileID: 0}
+  GreenPrefab: {fileID: 0}
+  WhitePrefab: {fileID: 0}
   RedButton: {fileID: 2126119000}
   YellowButton: {fileID: 637254510}
   BlueButton: {fileID: 386846251}
+  OrangeButton: {fileID: 0}
+  GreyButton: {fileID: 0}
+  GreenButton: {fileID: 0}
+  WhiteButton: {fileID: 0}
 --- !u!43 &1434211712
 Mesh:
   m_ObjectHideFlags: 0
@@ -2307,14 +2288,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6124200529606709680, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-      propertyPath: range
-      value: 1.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6124200529606709680, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6326532483369707911, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2708,14 +2681,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1679803272475244137, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
-      propertyPath: range
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1679803272475244137, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 3738823416777069571, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3140,66 +3105,6 @@ PrefabInstance:
     - target: {fileID: 6275618254786234002, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: SpawnForce
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: FusionTimer
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].Output
-      value: 
-      objectReference: {fileID: 6667451063572427581, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].Output
-      value: 
-      objectReference: {fileID: 6667451063572427581, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].OutputID
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].OutputID
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].FusionName
-      value: Fire+Ice=Water
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].FusionName
-      value: Fusion A
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].InputIDs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].InputIDs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].InputIDs.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].InputIDs.Array.data[1]
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].InputIDs.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[1].InputIDs.Array.data[1]
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6275618254786234005, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
       propertyPath: m_Name

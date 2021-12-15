@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6132983915709772467}
   - component: {fileID: 9064500564245777401}
   - component: {fileID: 5543413399369658221}
-  - component: {fileID: 5650285328480616458}
   - component: {fileID: 7597078214839092570}
   m_Layer: 0
   m_Name: default
@@ -83,19 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5650285328480616458
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3146489050904306056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.05
-  m_Center: {x: 0, y: 1.05, z: 0}
 --- !u!95 &7597078214839092570
 Animator:
   serializedVersion: 3
@@ -127,6 +113,7 @@ GameObject:
   - component: {fileID: -7417264372638299188}
   - component: {fileID: -675700988062786080}
   - component: {fileID: 799258347}
+  - component: {fileID: 799258351}
   m_Layer: 0
   m_Name: oighir
   m_TagString: NotFusable
@@ -179,7 +166,7 @@ MonoBehaviour:
   DislikedIDs: 04000000
   FusionIDs: 03000000
   IsFusable: 0
-  range: 4
+  range: 1.1
   speed: 5
 --- !u!54 &799258347
 Rigidbody:
@@ -197,3 +184,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!135 &799258351
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208028462271027537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.05
+  m_Center: {x: 0, y: 1.05, z: 0}

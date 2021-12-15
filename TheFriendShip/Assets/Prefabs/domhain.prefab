@@ -58,12 +58,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cfada4109e1c94e9f724a435e7439d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Creature:
-    LikedCreatures: []
-    DislikedCreatures: []
-    Fusions: []
+  ID: 0
+  LikedIDs: 
+  DislikedIDs: 
+  FusionIDs: 
   IsFusable: 0
-  RB: {fileID: 6676810988652335426}
   range: 0
   speed: 0
 --- !u!1 &7042326961669241651
@@ -192,7 +191,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 96
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &937017771438744104
 Animator:

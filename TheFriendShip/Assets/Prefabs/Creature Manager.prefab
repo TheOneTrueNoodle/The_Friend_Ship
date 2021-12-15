@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreatureFusions:
-  - FusionName: Fusion A
-    Inputs:
-    - {fileID: 0}
-    - {fileID: 0}
-    Output: {fileID: 0}
+  - FusionName: Fire+Ice=Water
+    InputIDs: 0100000002000000
+    OutputID: 3
+    Output: {fileID: 6667451063572427581, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
+  FusionTimer: 0.5
