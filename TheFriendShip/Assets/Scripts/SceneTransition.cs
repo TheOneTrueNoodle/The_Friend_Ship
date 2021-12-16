@@ -32,4 +32,11 @@ public class SceneTransition : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void StartMenu()
+    {
+        SceneManager.LoadScene("PrototypeMenu");
+        FindObjectOfType<AudioManager>().Stop("GamePlayTheme");
+        FindObjectOfType<AudioManager>().Play("StartMenuTheme");
+    }
 }
