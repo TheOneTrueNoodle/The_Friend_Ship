@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 2
   LikedIDs: 03000000
-  DislikedIDs: 01000000
+  DislikedIDs: 00000000
   FusionIDs: 04000000
   IsFusable: 0
   range: 1.1

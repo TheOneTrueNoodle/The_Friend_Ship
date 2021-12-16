@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4082839317462421177}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 15.4025755, y: 27.71, z: -23.60194}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4292717850170615131}
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   LikedIDs: 0200000003000000
-  DislikedIDs: 04000000
+  DislikedIDs: 00000000
   FusionIDs: 0400000006000000
   IsFusable: 0
   range: 1.1
