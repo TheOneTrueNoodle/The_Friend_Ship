@@ -44,8 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CreatureFusions:
-  - FusionName: Fire+Ice=Water
+  - FusionName: fire+ice=water
     InputIDs: 0100000002000000
-    OutputID: 3
+    OutputID: 4
     Output: {fileID: 6667451063572427581, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-  FusionTimer: 0.5
+  - FusionName: Earth+Fire=Electric
+    InputIDs: 0100000003000000
+    OutputID: 6
+    Output: {fileID: 199904056651378181, guid: b25536b16e79722439de030ed747bd70, type: 3}
+  - FusionName: Ice+Earth=Crystal
+    InputIDs: 0200000003000000
+    OutputID: 5
+    Output: {fileID: 7652726764772334517, guid: 3cf0576251d5e98418ce67c493049f06, type: 3}
+  - FusionName: Electric + Crystal = Metal
+    InputIDs: 0500000006000000
+    OutputID: 7
+    Output: {fileID: 3537843443547959058, guid: bf9d693dc97bef7489fba9a1536cc5a9, type: 3}
+  FusionTimer: 0.72

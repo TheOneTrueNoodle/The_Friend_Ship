@@ -2759,7 +2759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154, y: 259}
+  m_AnchoredPosition: {x: 111, y: 259}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348912065
@@ -4424,7 +4424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 194}
+  m_AnchoredPosition: {x: -31, y: 194}
   m_SizeDelta: {x: -1000, y: -300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &995707917
@@ -6194,26 +6194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: FusionTimer
-      value: 0.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].Output
-      value: 
-      objectReference: {fileID: 6667451063572427581, guid: 957d29da912ab4c419e5531817fe5333, type: 3}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].FusionName
-      value: fire+ice=water
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].Inputs.Array.data[0]
-      value: 
-      objectReference: {fileID: 4082839317462421177, guid: 1b9c8965d6fdac94399742cc5351a0ed, type: 3}
-    - target: {fileID: 6275618254786234003, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
-      propertyPath: CreatureFusions.Array.data[0].Inputs.Array.data[1]
-      value: 
-      objectReference: {fileID: 6208028462271027537, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
     - target: {fileID: 6275618254786234005, guid: 43501340c6f192243b362b43ee8a9ae3, type: 3}
       propertyPath: m_Name
       value: Fusions Manager
