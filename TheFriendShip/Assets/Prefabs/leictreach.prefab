@@ -61,11 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 6
-  LikedIDs: 0500000004000000
+  LikedIDs: 05000000
   DislikedIDs: 00000000
   FusionIDs: 07000000
   IsFusable: 0
-  range: 1.1
+  range: 1.2
   speed: 7
 --- !u!54 &2083561578
 Rigidbody:
@@ -81,7 +81,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 96
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!135 &2083561577
 SphereCollider:
@@ -94,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.99999994
+  m_Radius: 1
   m_Center: {x: 0, y: 1.0999999, z: 0}
 --- !u!1 &9172698081643075292
 GameObject:

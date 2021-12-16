@@ -65,7 +65,7 @@ MonoBehaviour:
   DislikedIDs: 00000000
   FusionIDs: 0400000006000000
   IsFusable: 0
-  range: 1.1
+  range: 1.2
   speed: 6
 --- !u!54 &1156806969
 Rigidbody:
@@ -94,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6972456
+  m_Radius: 0.6
   m_Center: {x: 0.02000004, y: 0.73378086, z: 0.19999996}
 --- !u!1 &4982357065373316704
 GameObject:
