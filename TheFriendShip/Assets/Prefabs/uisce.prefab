@@ -161,10 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cfada4109e1c94e9f724a435e7439d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 3
+  ID: 4
   LikedIDs: 04000000
   DislikedIDs: 0100000002000000
-  FusionIDs: 06000000
+  FusionIDs: 00000000
   IsFusable: 0
   range: 1.11
   speed: 5
