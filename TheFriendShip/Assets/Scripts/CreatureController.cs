@@ -71,7 +71,7 @@ public class CreatureController : MonoBehaviour
                 {
                     foreach (int OtherFusion in other.gameObject.GetComponent<CreatureController>().FusionIDs)
                     {
-                        if (OtherFusion == Fusion)
+                        if (OtherFusion == Fusion && other.gameObject.GetComponent<CreatureController>().ID != ID)
                         {
                             List<GameObject> InputCreatures = new List<GameObject>();
                             InputCreatures.Add(other.gameObject);
