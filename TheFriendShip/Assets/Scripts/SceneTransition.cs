@@ -8,11 +8,18 @@ public class SceneTransition : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject PauseMenuUI;
+
+    public GameObject PauseButton;
+    public GameObject CreatureMenu;
+    
     public void Transition()
     {
         SceneManager.LoadScene("Declan");
         FindObjectOfType<AudioManager>().Stop("StartMenuTheme");
         FindObjectOfType<AudioManager>().Play("GamePlayTheme");
+        GameIsPaused = false;
+        gameObject.SetActive(PauseButton);
+        gameObject.SetActive(CreatureMenu);
     }
 
     public void Quit()
