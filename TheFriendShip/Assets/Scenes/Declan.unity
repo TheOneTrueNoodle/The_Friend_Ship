@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -4525,7 +4525,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -7616,7 +7616,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -7869,10 +7869,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Tap on a creature to select it, then hold your phone in front of a flat
-    surface for 5 seconds
+    surface for 5 seconds.
 
 
-    Tap on the grey platforms to place your creature
+    Tap on the grey platforms to place your creature.
 
 
     Try
@@ -10932,7 +10932,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -11979,7 +11979,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -12340,7 +12340,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
@@ -12673,7 +12673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tap on the middle button to open up the creature menu
+  m_text: 'Tap on the middle button to open up the creature menu.
 
 '
   m_isRightToLeft: 0
@@ -13921,7 +13921,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9818392, g: 1, b: 0.6367924, a: 1}
+    m_HighlightedColor: {r: 0.6179246, g: 0.89696443, b: 1, a: 1}
     m_PressedColor: {r: 0.29411766, g: 0.84313726, b: 0.90588236, a: 1}
     m_SelectedColor: {r: 0.13238698, g: 0.17579885, b: 0.23584908, a: 1}
     m_DisabledColor: {r: 1, g: 0.5896226, b: 0.5896226, a: 0.5019608}
