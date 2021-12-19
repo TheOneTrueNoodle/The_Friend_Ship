@@ -42,7 +42,7 @@ public class SceneTransition : MonoBehaviour
 
     public void StartMenu()
     {
-        SceneManager.LoadScene("PrototypeMenu");
+        SceneManager.LoadScene("StartMenu");
         FindObjectOfType<AudioManager>().Stop("GamePlayTheme");
         FindObjectOfType<AudioManager>().Play("StartMenuTheme");
     }
