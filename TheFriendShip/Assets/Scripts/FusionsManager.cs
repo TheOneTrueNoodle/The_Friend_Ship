@@ -20,6 +20,7 @@ public class FusionsManager : MonoBehaviour
         if(IsFusing != true)
         {
             IsFusing = true;
+            FindObjectOfType<AudioManager>().Play("Fuse");
             _ = StartCoroutine(WaitToFuse(Inputs, FusionID, FusionLocation));
         }
     }
