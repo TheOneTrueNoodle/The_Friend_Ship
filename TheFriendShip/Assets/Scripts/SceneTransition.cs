@@ -14,7 +14,7 @@ public class SceneTransition : MonoBehaviour
     
     public void Transition()
     {
-        SceneManager.LoadScene("Declan");
+        SceneManager.LoadScene("FriendShip");
         FindObjectOfType<AudioManager>().Stop("StartMenuTheme");
         FindObjectOfType<AudioManager>().Play("GamePlayTheme");
         GameIsPaused = false;
