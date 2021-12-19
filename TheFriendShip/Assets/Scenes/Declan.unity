@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 5548957}
   - component: {fileID: 5548956}
   - component: {fileID: 5548955}
+  - component: {fileID: 5548958}
   m_Layer: 5
   m_Name: ElectricBox(OrangeButton)
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,6 +281,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5548953}
   m_CullTransparentMesh: 1
+--- !u!114 &5548958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5548953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c58e06983e95b0468cd8f9d2b94f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button_ID: 0
 --- !u!1 &20378687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4460,9 +4474,10 @@ GameObject:
   - component: {fileID: 362891153}
   - component: {fileID: 362891152}
   - component: {fileID: 362891151}
+  - component: {fileID: 362891154}
   m_Layer: 5
   m_Name: MetalBox(WhiteButton)
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4605,6 +4620,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362891149}
   m_CullTransparentMesh: 1
+--- !u!114 &362891154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362891149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c58e06983e95b0468cd8f9d2b94f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button_ID: 0
 --- !u!1 &375091243
 GameObject:
   m_ObjectHideFlags: 0
@@ -7537,9 +7565,10 @@ GameObject:
   - component: {fileID: 971814188}
   - component: {fileID: 971814187}
   - component: {fileID: 971814186}
+  - component: {fileID: 971814189}
   m_Layer: 5
   m_Name: WaterBox(GreenButton)
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7682,6 +7711,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971814184}
   m_CullTransparentMesh: 1
+--- !u!114 &971814189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971814184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c58e06983e95b0468cd8f9d2b94f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button_ID: 0
 --- !u!1 &974551411
 GameObject:
   m_ObjectHideFlags: 0
@@ -8455,15 +8497,14 @@ MonoBehaviour:
   m_Text: 'Oighir are ice creatures that love cold environments such as mountains
     and tundra.
 
-    
 
-    They enjoy seeing icicles form in caves deep below the
-    earth.
 
-    
+    They enjoy seeing icicles form in caves deep below the earth.
 
-    They allow their bodies to melt so that they aren''t heavy
-    during warmer seasons.
+
+
+    They
+    allow their bodies to melt so that they aren''t heavy during warmer seasons.
 
 '
 --- !u!222 &1042883855
@@ -11715,9 +11756,10 @@ GameObject:
   - component: {fileID: 1593720962}
   - component: {fileID: 1593720961}
   - component: {fileID: 1593720960}
+  - component: {fileID: 1593720963}
   m_Layer: 5
   m_Name: CrystalBox(GreyButton)
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11860,6 +11902,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593720958}
   m_CullTransparentMesh: 1
+--- !u!114 &1593720963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593720958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c58e06983e95b0468cd8f9d2b94f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button_ID: 0
 --- !u!1 &1599778888
 GameObject:
   m_ObjectHideFlags: 0
@@ -12839,15 +12894,15 @@ MonoBehaviour:
   m_Text: 'Domhain are earth creatures that like rocky environments such as hills
     and mountains.
 
-    
 
-    They like creating sparks when moving their bodies
-    along hot surfaces.
 
-    
+    They like creating sparks when moving their bodies along
+    hot surfaces.
 
-    When ice covers their bodies during cold seasons
-    it reminds them of crystals deep beneath the earth.
+
+
+    When ice covers their bodies during cold seasons it reminds
+    them of crystals deep beneath the earth.
 
 '
 --- !u!222 &1817680493

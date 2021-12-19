@@ -166,8 +166,8 @@ MonoBehaviour:
   DislikedIDs: 00000000
   FusionIDs: 04000000
   IsFusable: 0
-  range: 1.2
-  speed: 3
+  range: 2.1
+  speed: 4
 --- !u!54 &799258347
 Rigidbody:
   m_ObjectHideFlags: 0

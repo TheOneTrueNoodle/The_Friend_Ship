@@ -1362,6 +1362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -675700988062786080, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6208028462271027537, guid: be5db17184dcbce4193fccda78c2acda, type: 3}
       propertyPath: m_Name
       value: oighir
