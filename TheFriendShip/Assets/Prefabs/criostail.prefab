@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 780846906}
   m_Layer: 0
   m_Name: criostail
-  m_TagString: Untagged
+  m_TagString: NotFusable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,6 @@ MonoBehaviour:
   DislikedIDs: 00000000
   FusionIDs: 07000000
   IsFusable: 0
-  range: 1.5
   speed: 3
 --- !u!135 &780846907
 SphereCollider:

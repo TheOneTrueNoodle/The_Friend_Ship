@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 186033367}
   m_Layer: 0
   m_Name: miotail
-  m_TagString: Untagged
+  m_TagString: NotFusable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,6 @@ MonoBehaviour:
   DislikedIDs: 00000000
   FusionIDs: 00000000
   IsFusable: 0
-  range: 1.2
   speed: 4
 --- !u!135 &186033368
 SphereCollider:
