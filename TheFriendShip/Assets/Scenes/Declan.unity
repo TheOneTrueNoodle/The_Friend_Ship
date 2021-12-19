@@ -7868,12 +7868,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tap on a creature to select it, then tap inside of the black lines to
-    place the creature in the world
+  m_text: 'Tap on a creature to select it, then hold your phone in front of a flat
+    surface for 5 seconds
 
 
-    Try and find all the possible combinations
-    of fusions and have fun!'
+    Tap on the grey platforms to place your creature
+
+
+    Try
+    and discover all 7 creatures and have fun!
+
+
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14343,6 +14351,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8960032641586630822, guid: 2ac417ed3f83ad9458d6326a9f956387, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960032641586630822, guid: 2ac417ed3f83ad9458d6326a9f956387, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960032641586630822, guid: 2ac417ed3f83ad9458d6326a9f956387, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5729bd05b25a60446b4c989e1b3634d5, type: 2}
     - target: {fileID: 8960032641586630824, guid: 2ac417ed3f83ad9458d6326a9f956387, type: 3}
       propertyPath: m_Name
       value: AR Default Plane

@@ -166,7 +166,6 @@ MonoBehaviour:
   DislikedIDs: 00000000
   FusionIDs: 07000000
   IsFusable: 0
-  range: 1.5
   speed: 3
 --- !u!135 &780846907
 SphereCollider:
