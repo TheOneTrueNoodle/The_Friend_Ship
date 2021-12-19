@@ -8,17 +8,12 @@ public class FusionsManager : MonoBehaviour
     private Vector3 FusionLocation;
     private GameObject SpawnFusion;
 
-    private GameObject[] CreatureButtons;
+    public GameObject[] CreatureButtons;
 
     [Range(0.0f, 10.0f)]
     public float FusionTimer;
 
     private bool IsFusing;
-
-    public void Start()
-    {
-        CreatureButtons = GameObject.FindGameObjectsWithTag("Button");
-    }
 
     public void TriggerFusion(List<GameObject> Inputs, int FusionID, Vector3 FusionLocation)
     {
