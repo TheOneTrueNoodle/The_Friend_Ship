@@ -16,7 +16,6 @@ public class CreatureController : MonoBehaviour
 
     private Rigidbody RB;
 
-    public float range;
     public float speed;
 
     private void Start()
@@ -63,25 +62,22 @@ public class CreatureController : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(other.transform.position, transform.position) < range)
+            Debug.Log("Okay so this far is working!!!!");
+            foreach (int Fusion in FusionIDs)
             {
-                Debug.Log("Okay so this far is working!!!!");
-
-                foreach (int Fusion in FusionIDs)
+                foreach (int OtherFusion in other.gameObject.GetComponent<CreatureController>().FusionIDs)
                 {
-                    foreach (int OtherFusion in other.gameObject.GetComponent<CreatureController>().FusionIDs)
+                    if (OtherFusion == Fusion && other.gameObject.GetComponent<CreatureController>().ID != ID)
                     {
-                        if (OtherFusion == Fusion && other.gameObject.GetComponent<CreatureController>().ID != ID)
-                        {
-                            List<GameObject> InputCreatures = new List<GameObject>();
-                            InputCreatures.Add(other.gameObject);
-                            InputCreatures.Add(gameObject);
+                        List<GameObject> InputCreatures = new List<GameObject>();
+                        InputCreatures.Add(other.gameObject);
+                        InputCreatures.Add(gameObject);
 
-                            tag = "Fusable";
-                            other.gameObject.tag = "Fusable";
-                            IsFusable = true;
-                            FusionsManager.GetComponent<FusionsManager>().TriggerFusion(InputCreatures, Fusion, other.transform.position);
-                        }
+                        tag = "Fusable";
+                        other.gameObject.tag = "Fusable";
+                        IsFusable = true;
+                        other.gameObject.GetComponent<CreatureController>().IsFusable = true;
+                        FusionsManager.GetComponent<FusionsManager>().TriggerFusion(InputCreatures, Fusion, other.transform.position);
                     }
                 }
             }

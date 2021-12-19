@@ -8,6 +8,8 @@ public class FusionsManager : MonoBehaviour
     private Vector3 FusionLocation;
     private GameObject SpawnFusion;
 
+    public GameObject[] CreatureButtons;
+
     [Range(0.0f, 10.0f)]
     public float FusionTimer;
 
@@ -52,6 +54,13 @@ public class FusionsManager : MonoBehaviour
             if (Fusion.OutputID == FusionID)
             {
                 GameObject NewCreature = Instantiate(Fusion.Output, FusionLocation, Quaternion.identity);
+                foreach(GameObject But in CreatureButtons)
+                {
+                    if(NewCreature.GetComponent<CreatureController>().ID == But.GetComponent<ButtonID>().Button_ID)
+                    {
+                        But.SetActive(true);
+                    }
+                }
             }
         }
 
