@@ -64,8 +64,7 @@ MonoBehaviour:
   LikedIDs: 0100000002000000
   DislikedIDs: 00000000
   FusionIDs: 0500000006000000
-  IsFusable: 0
-  range: 2.1
+  IsFusable: 1
   speed: 4
 --- !u!54 &1860031964
 Rigidbody:
